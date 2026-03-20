@@ -691,6 +691,55 @@ p { color: var(--text-secondary); line-height: 1.75; }
   .tech-good-section { padding: 24px; }
 }
 
+/* ── Teaching ── */
+.teaching-card {
+  display: flex; align-items: flex-start; justify-content: space-between; gap: 32px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 36px;
+  transition: all var(--transition);
+  cursor: pointer;
+  max-width: 860px; margin: 0 auto;
+}
+.teaching-card:hover {
+  border-color: var(--accent-blue);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-glow);
+}
+.teaching-card-left { display: flex; flex-direction: column; gap: 14px; flex: 1; }
+.teaching-org { display: flex; align-items: center; gap: 12px; }
+.teaching-badge {
+  font-size: 0.68rem; font-weight: 600;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  padding: 3px 10px; border-radius: 100px;
+  background: rgba(59,130,246,0.15); color: #93c5fd;
+}
+.teaching-platform { font-size: 0.85rem; font-weight: 600; color: var(--accent-cyan); }
+.teaching-card h3 { color: var(--text-primary); font-size: 1.15rem; }
+.teaching-card p { font-size: 0.9rem; }
+.teaching-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.teaching-tags span {
+  font-size: 0.72rem; font-weight: 500;
+  padding: 3px 10px; border-radius: 100px;
+  background: rgba(59,130,246,0.1);
+  border: 1px solid rgba(59,130,246,0.2);
+  color: #93c5fd;
+}
+.teaching-card-right {
+  display: flex; flex-direction: column; align-items: flex-end;
+  justify-content: space-between; gap: 24px; flex-shrink: 0;
+}
+.teaching-rating { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+.teaching-stars { color: #fbbf24; font-size: 1rem; letter-spacing: 2px; }
+.teaching-score { font-size: 1.5rem; font-weight: 800; color: var(--text-primary); }
+.teaching-link { font-size: 0.85rem; font-weight: 600; color: var(--accent-blue); white-space: nowrap; }
+
+@media (max-width: 600px) {
+  .teaching-card { flex-direction: column; }
+  .teaching-card-right { flex-direction: row; align-items: center; width: 100%; }
+}
+
 /* ── Skills ── */
 .skills-grid {
   display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px;

@@ -225,7 +225,7 @@ p { color: var(--text-secondary); line-height: 1.75; }
 }
 
 .hero-name { color: var(--text-primary); }
-.hero-phd { font-size: 0.55em; color: var(--text-secondary); font-weight: 500; vertical-align: top; margin-top: 0.35em; display: inline-block; }
+.hero-phd { font-size: 1em; color: var(--text-primary); font-weight: 700; }
 
 .hero-tagline {
   font-size: clamp(1.1rem, 2.5vw, 1.4rem);

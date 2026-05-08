@@ -692,6 +692,11 @@ p { color: var(--text-secondary); line-height: 1.75; }
 }
 
 /* ── Teaching ── */
+.teaching-grid {
+  display: flex; flex-direction: column; gap: 24px;
+  max-width: 860px; margin: 0 auto;
+}
+.teaching-grid .teaching-card { max-width: none; margin: 0; }
 .teaching-card {
   display: flex; align-items: flex-start; justify-content: space-between; gap: 32px;
   background: var(--bg-card);
@@ -701,6 +706,7 @@ p { color: var(--text-secondary); line-height: 1.75; }
   transition: all var(--transition);
   cursor: pointer;
   max-width: 860px; margin: 0 auto;
+  text-decoration: none;
 }
 .teaching-card:hover {
   border-color: var(--accent-blue);
